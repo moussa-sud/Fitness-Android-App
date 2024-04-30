@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -12,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     RecyclerView rv ;
+
+    Button calories_calculator_Btn;
 
 
 
@@ -21,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         rv = findViewById(R.id.rv);
+
+        calories_calculator_Btn= findViewById(R.id.calculatorBTN);
 
 
         ArrayList<Information> information = new ArrayList<>();
@@ -47,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         rv.setLayoutManager(linearLayoutManager);
+
+
+        calories_calculator_Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentOne = new Intent(MainActivity.this, Calculator_Activity.class);
+                startActivity(intentOne);
+            }
+        });
 
 
 

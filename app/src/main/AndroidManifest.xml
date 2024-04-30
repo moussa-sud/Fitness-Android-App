@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApp"
         tools:targetApi="31">
+        <activity android:name=".Calculator_Activity"/>
+
         <activity
             android:name=".bicepsActivity"
             android:exported="false" />
