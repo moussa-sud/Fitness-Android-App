@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RecyclerViewApp</string>
+    <string name="NULL">NULL</string>
+
+    <string name="chest1">Standing Cable Fly Overview The standing cable fly is a variation of the chest fly and an exercise used to strengthen the pushing muscles of the body including the chest, triceps, and shoulders.</string>
+    <string name="chest2">Sit on the end of the bench and lie back with the handles just below shoulder height. The handles should mimic the position of the bar when benching.Position your palms on the handles, inhale, and set your shoulder blades together on the bench.</string>
+
+</resources>

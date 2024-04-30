@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="2dp"
+    android:id="@+id/cardView"
+
+app:cardBackgroundColor="#2196F3"
+app:cardCornerRadius="8dp"
+
+app:cardElevation="8dp"
+app:cardMaxElevation="10dp"
+app:cardPreventCornerOverlap="true"
+app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/product_IM"
+            android:layout_width="250dp"
+            android:layout_height="226dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="8dp">
+
+
+            <ImageView
+
+                android:id="@+id/product_IM1"
+                android:layout_width="254dp"
+                android:layout_height="214dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/product_IM"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
